@@ -1,0 +1,22 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-10-07
+
+--- a/test.js
++++ b/test.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+-import test from 'ava';
+-import semverDiff from '.';
++const test = require('tape');
++const semverDiff = require('.');
+ 
+ test('should get the semver diff type', t => {
+ 	t.is(semverDiff('0.0.1', '1.0.0'), 'major');
+@@ -22,4 +22,5 @@
+ 	t.is(semverDiff('0.0.1+2.0', '0.0.1+2'), undefined);
+ 	t.is(semverDiff('0.0.1+2.a', '0.0.1+2.0'), undefined);
+ 	t.is(semverDiff('0.0.1+2.0', '0.0.1+2.a'), 'build');
++	t.end();
+ });

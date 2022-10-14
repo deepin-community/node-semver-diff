@@ -1,0 +1,27 @@
+Source: node-semver-diff
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-semver <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-semver-diff
+Vcs-Git: https://salsa.debian.org/js-team/node-semver-diff.git
+Homepage: https://github.com/sindresorhus/semver-diff
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-semver-diff
+Architecture: all
+Depends: ${misc:Depends}
+ , node-semver
+Description: get the diff type of two semver versions
+ Returns the difference type between two semver versions, or `null` if they're
+ identical or the second one is lower than the first.
+ .
+ Possible values: 'major', 'minor', 'patch', 'prerelease', 'build', 'null'.
+ .
+ Node.js is an event-based server-side JavaScript engine.

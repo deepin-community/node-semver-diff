@@ -1,0 +1,54 @@
+node-semver-diff (3.1.1-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-semver.
+    + node-semver-diff: Drop versioned constraint on node-semver in Depends.
+
+  [ Yadd ]
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Declare compliance with policy 4.6.0
+
+ -- Yadd <yadd@debian.org>  Fri, 20 Aug 2021 21:33:50 +0200
+
+node-semver-diff (3.1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Use dh-sequence-nodejs auto test & install
+  * New upstream version 3.1.1
+  * Update copyright
+  * Update test
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 07 Oct 2020 17:34:40 +0200
+
+node-semver-diff (2.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add node-semver as build dependency (Closes: #884295)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 14 Dec 2017 22:20:51 +0530
+
+node-semver-diff (2.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #868375)
+
+ -- Sruthi Chandran <srud@disroot.org>  Sat, 15 Jul 2017 16:25:01 +0530
